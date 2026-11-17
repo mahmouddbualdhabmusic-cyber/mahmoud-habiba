@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<title>دعوة خطوبة محمود وحبيبة</title>
+<meta name="description" content="يتشرف أهل العريس وأهل العروس بدعوتكم لحضور حفل خطوبة محمود وحبيبة">
+<meta property="og:title" content="دعوة خطوبة محمود وحبيبة 💍">
+<meta property="og:description" content="يسعدنا حضوركم، اضغط لفتح الدعوة">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&display=swap"></noscript>
+<style>
+:root{--bg:#f4ece0;--card:#ffffff;--ink:#4a3f35;--muted:#8c7b6b;--gold:#a68a64;--line:#e6d9c5;--env:#eadfcb;--env2:#d9c9ae;--env3:#f6efe2;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+ *{box-sizing:border-box}
+body{position:relative;overflow-x:hidden;margin:0;background:var(--bg);color:var(--ink);font-family:'Amiri',serif;font-size:18px;min-height:100vh}
+#main{display:flex;flex-direction:column;align-items:center;padding:24px 16px;opacity:0;transform:translateY(24px) scale(.96);transition:opacity 1s,transform 1s}
+#main.shown{opacity:1;transform:none}
+.card{width:100%;max-width:440px;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:12px;box-shadow:0 12px 32px rgba(120,95,60,.15)}
+.inner{border:2px solid var(--gold);border-radius:14px;padding:36px 22px;text-align:center}
+.bismillah{font-family:'Aref Ruqaa',serif;color:var(--gold);font-size:24px;margin:0 0 16px}
+.small{color:var(--muted);margin:0}
+.verse{font-family:'Aref Ruqaa',serif;font-size:22px;line-height:2.1;margin:0 0 6px}
+.intro-line{font-size:19px;line-height:2;color:var(--ink);margin:18px 0 10px}
+.lead{font-size:21px;line-height:2;margin:10px 0 20px}
+.names{font-family:'Aref Ruqaa',serif;font-weight:700;font-size:44px;line-height:1.6;color:var(--gold);margin:4px 0}
+.amp{font-family:'Amiri',serif;font-size:26px;color:var(--muted);display:block;line-height:1}
+.divider{width:90px;height:1px;background:var(--gold);margin:24px auto;position:relative}
+.divider::after{content:"❖";position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--card);padding:0 8px;color:var(--gold);font-size:14px}
+.row{margin:14px 0}
+.label{color:var(--muted);font-size:16px}
+.val{font-size:24px;font-weight:700;unicode-bidi:plaintext}
+.dua{font-size:19px;line-height:2;color:var(--muted);margin-top:24px}
+details{width:100%;max-width:440px;margin-top:18px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px}
+summary{cursor:pointer;color:var(--gold);font-weight:700}
+label.f{display:block;margin-top:10px;color:var(--muted);font-size:16px}
+input{width:100%;margin-top:4px;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit}
+
+.btn{display:inline-block;margin-top:10px;padding:11px 22px;border-radius:999px;background:var(--gold);color:#fff;font:inherit;font-weight:700;font-size:19px;border:1.5px solid var(--gold);text-decoration:none;cursor:pointer}
+.btn.outline{background:transparent;color:var(--gold)}
+.rsvp input{text-align:center;font-size:20px;margin-top:8px}
+.note{min-height:22px;margin-top:8px;color:var(--muted);font-size:16px}
+
+/* envelope intro */
+#intro{position:fixed;top:0;right:0;bottom:0;left:0;z-index:10;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);cursor:pointer;transition:opacity .9s}
+#intro.done{opacity:0;pointer-events:none}
+.env{width:300px;height:200px;position:relative;perspective:900px;margin-top:80px}
+.env-back{position:absolute;top:0;right:0;bottom:0;left:0;background:var(--env2);border-radius:6px}
+.paper{position:absolute;left:14px;right:14px;top:12px;bottom:12px;background:var(--card);border:1px solid var(--line);border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:'Aref Ruqaa',serif;color:var(--gold);font-size:22px;z-index:1;transition:transform .9s ease .55s}
+.pocket{position:absolute;top:0;right:0;bottom:0;left:0;background:var(--env);clip-path:polygon(0 0,50% 56%,100% 0,100% 100%,0 100%);z-index:2;border-radius:6px}
+.flap{position:absolute;top:0;left:0;width:100%;height:60%;background:var(--env3);clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform .7s ease,z-index 0s .35s;z-index:3}
+.seal{position:absolute;left:50%;top:56%;width:46px;height:46px;margin:-23px 0 0 -23px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-size:22px;z-index:4;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:opacity .3s}
+.hint{color:var(--muted);font-size:20px;animation:pulse 1.8s infinite}
+@keyframes pulse{50%{opacity:.4}}
+#intro.open .flap{transform:rotateX(180deg);z-index:0}
+#intro.open .paper{transform:translateY(-95px)}
+#intro.open .seal{opacity:0}
+#intro.open .hint{opacity:0;animation:none}
+
+/* ===== لمسة الفخامة ===== */
+:root{--bg:#efe6d8;--card:#fffdf9;--ink:#3d322a;--muted:#85756a;--gold:#a8864f;--line:#e8dcc7;--env:#e6d8bf;--env2:#cfba96;--env3:#f3eadb}
+body,#intro{background:radial-gradient(ellipse at 50% 0%,#fbf7ef 0%,#f1e9dc 55%,#e7dcc9 100%)}
+.card{border:1px solid var(--line);box-shadow:0 22px 50px rgba(110,85,50,.18),0 2px 6px rgba(110,85,50,.08)}
+.inner{border:1.5px solid var(--gold);box-shadow:inset 0 0 0 5px var(--card),inset 0 0 0 6px rgba(168,134,79,.4)}
+.names{background:linear-gradient(135deg,#86642f 0%,#c9a869 50%,#86642f 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--gold)}
+.amp{-webkit-text-fill-color:var(--muted)}
+.bismillah,.verse{color:#8a6a35}
+.divider{background:linear-gradient(90deg,transparent,var(--gold),transparent);height:1.5px}
+.btn{background:linear-gradient(135deg,#bc9a62,#96763f);border-color:#96763f;box-shadow:0 6px 14px rgba(150,118,63,.3)}
+.btn.outline{background:transparent;color:#8a6a35;box-shadow:none;border-color:var(--gold)}
+.btn:disabled{opacity:.7}
+.seal{background:radial-gradient(circle at 35% 30%,#d9bf8c,#a8864f 70%)}
+.paper{background:#fffdf9}
+
+/* ===== خلفية الأفراح والمونوجرام ===== */
+.bgdeco{position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:.32}
+.float{position:fixed;top:0;right:0;bottom:0;left:0;z-index:0;pointer-events:none;overflow:hidden}
+.float span{position:absolute;bottom:-30px;color:#c9a869;opacity:0;animation:rise linear infinite}
+@keyframes rise{0%{transform:translateY(0) rotate(0);opacity:0}15%{opacity:.7}85%{opacity:.5}100%{transform:translateY(-110vh) rotate(40deg);opacity:0}}
+#main{position:relative;z-index:1}
+#intro{background:transparent}
+.card{background:rgba(255,253,249,.95)}
+.mono{width:190px;margin:0 auto 12px}
+.mono svg{width:100%;height:auto;display:block}
+.seal{font-family:'Aref Ruqaa',serif;color:#fffdf9;font-size:19px;font-weight:700;letter-spacing:1px}
+@media (prefers-reduced-motion:reduce){.float{display:none}}
+
+/* ===== أسماء الآباء ===== */
+.names{margin:0;line-height:1.5}
+.father{margin:0 0 4px;line-height:1.6}
+.rel{display:block;color:var(--muted);font-size:16px}
+.fname{display:block;font-size:22px;font-weight:700;color:var(--ink)}
+.amp2{font-family:'Amiri',serif;font-size:28px;color:var(--gold);line-height:1.2;margin:6px 0}
+
+/* ===== خط الأسماء ===== */
+.names{font-family:'Aref Ruqaa Ink','Aref Ruqaa',serif;font-weight:700;font-size:clamp(48px,15vw,64px);line-height:1.45;
+background:linear-gradient(135deg,#6b4a1c 0%,#b8903f 45%,#e0c488 55%,#6b4a1c 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+letter-spacing:.5px}
+.amp2+.names{margin-top:-16px}
+.names+.father{margin-top:12px}
+.father{line-height:2}
+.rel{font-size:17px;line-height:2.1;margin-bottom:6px;letter-spacing:.3px}
+.fname{font-size:24px;line-height:2.1;margin-top:4px;color:#4a3a2a}
+.bgdeco{opacity:.42}
+
+/* ===== العد التنازلي ===== */
+.cd{margin:26px 0 6px}
+.cd-t{color:var(--muted);font-size:17px;margin-bottom:10px}
+.cd-row{display:flex;gap:8px;justify-content:center}
+.cd-b{flex:1;max-width:76px;border:1.5px solid var(--gold);border-radius:12px;padding:8px 0 6px;background:linear-gradient(#fffdf9,#f4ecdd);box-shadow:0 4px 10px rgba(110,85,50,.12)}
+.cd-b b{display:block;font-size:30px;line-height:1.2;color:#8a6a35;direction:ltr;font-variant-numeric:tabular-nums}
+.cd-b span{font-size:14px;color:var(--muted)}
+.cd-done{font-family:'Aref Ruqaa',serif;font-size:24px;color:#8a6a35}
+
+/* ===== أنيميشن الجواب ===== */
+.env{animation:bob 3.2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-6px)}}
+.seal{animation:glow 2s ease-in-out infinite}
+@keyframes glow{50%{box-shadow:0 0 0 7px rgba(201,168,105,.28),0 2px 8px rgba(0,0,0,.3)}}
+.flap{transition:transform 1s cubic-bezier(.3,.9,.3,1),z-index 0s .45s}
+.paper{transform:rotate(1.2deg);transition:transform 1.2s cubic-bezier(.25,.9,.3,1) .7s}
+#intro.open .paper{transform:translateY(-125px) rotate(0)}
+#intro.open .seal{animation:sealpop .55s ease forwards}
+@keyframes sealpop{40%{transform:scale(1.35)}100%{transform:scale(.2);opacity:0}}
+#intro.open .env{animation:leave .9s ease-in 2.1s forwards}
+@keyframes leave{to{transform:translateY(70px) scale(.92);opacity:0}}
+.burst span{position:absolute;left:50%;top:32%;color:#c9a869;opacity:0;font-size:18px;animation:pop 1.5s ease-out .65s forwards;z-index:5}
+@keyframes pop{0%{opacity:0;transform:translate(0,0) scale(.3)}20%{opacity:1}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(1.3) rotate(140deg)}}
+
+/* ===== تصميم التاريخ ===== */
+.datebox{margin:18px 0 8px}
+.dw{display:flex;align-items:center;justify-content:center;gap:12px;color:#8a6a35;font-size:21px;font-weight:700}
+.dw::before,.dw::after{content:"";flex:0 0 50px;height:1.5px}
+.dw::before{background:linear-gradient(90deg,transparent,var(--gold))}
+.dw::after{background:linear-gradient(270deg,transparent,var(--gold))}
+.dmed{width:136px;height:136px;margin:12px auto 10px;border-radius:50%;border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;background:radial-gradient(circle,#fffdf9 55%,#f6efe2);box-shadow:inset 0 0 0 6px #fffdf9,inset 0 0 0 7.5px rgba(168,134,79,.45),0 8px 18px rgba(110,85,50,.16)}
+.dd{font-family:'Aref Ruqaa Ink','Aref Ruqaa',serif;font-weight:700;font-size:72px;line-height:1;direction:ltr;
+background:linear-gradient(135deg,#6b4a1c 0%,#b8903f 45%,#e0c488 55%,#6b4a1c 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
+.dy{font-size:26px;font-weight:700;letter-spacing:3px;color:#8a6a35;direction:ltr}
+
+/* ===== التاريخ داخل مربعات ===== */
+.dgrid{display:flex;justify-content:center;gap:10px;margin:14px 0 4px}
+.dbox{width:78px;padding:12px 0 9px;border-radius:14px;border:1.5px solid var(--gold);background:linear-gradient(160deg,#fffdf9,#f3ead9);box-shadow:inset 0 0 0 4px #fffdf9,inset 0 0 0 5px rgba(168,134,79,.4),0 8px 16px rgba(110,85,50,.15)}
+.dbox.dyear{width:104px}
+.dbox b{display:block;direction:ltr;font-family:'Aref Ruqaa Ink','Aref Ruqaa',serif;font-weight:700;font-size:42px;line-height:1.15;
+background:linear-gradient(135deg,#6b4a1c 0%,#b8903f 45%,#e0c488 55%,#6b4a1c 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
+.dbox span{display:block;margin-top:2px;font-size:15px;color:var(--muted)}
+
+/* ===== تاريخ عصري ===== */
+.datebox{margin:22px 0 10px;text-align:center}
+.dbadge{display:inline-block;position:relative;z-index:1;margin-bottom:-15px;padding:5px 22px;border-radius:999px;background:linear-gradient(135deg,#bc9a62,#96763f);color:#fff;font-family:'Reem Kufi','Amiri',sans-serif;font-size:16px;letter-spacing:1px;box-shadow:0 6px 12px rgba(150,118,63,.3)}
+.dpanel{display:flex;align-items:stretch;border:1px solid rgba(168,134,79,.55);border-radius:22px;padding:28px 6px 14px;background:linear-gradient(180deg,#fffdf9,#f6eee0);box-shadow:0 14px 30px rgba(110,85,50,.14)}
+.dcol{flex:1;text-align:center}
+.dcol+.dcol{border-inline-start:1px solid rgba(168,134,79,.35)}
+.dcol.dy{flex:1.55}
+.dcol b{display:block;direction:ltr;font-family:'Reem Kufi','Amiri',sans-serif;font-weight:600;font-size:50px;line-height:1.15;color:#4a3a2a;letter-spacing:1px}
+.dcol span{display:block;margin-top:2px;font-family:'Reem Kufi','Amiri',sans-serif;font-size:13px;letter-spacing:3px;color:#a8864f}
+
+.paper{flex-direction:column;gap:6px}
+.paper .pm{width:150px}
+.paper .pm svg,.pmono svg{width:100%;height:auto;display:block}
+.paper .pt{font-family:'Aref Ruqaa',serif;font-size:17px;color:#8a6a35}
+.pmono{position:absolute;left:50%;bottom:12px;width:86px;margin-left:-43px;z-index:2;opacity:.8;pointer-events:none}
+
+/* ===== توحيد الستايل مع رونق الدعوة ===== */
+.dbadge{font-family:'Aref Ruqaa',serif;font-size:20px;font-weight:700;letter-spacing:0;padding:4px 24px}
+.dpanel{border:1.5px solid var(--gold);border-radius:18px;padding:30px 8px 16px;box-shadow:inset 0 0 0 5px #fffdf9,inset 0 0 0 6px rgba(168,134,79,.4),0 10px 24px rgba(110,85,50,.14)}
+.dcol b{font-family:'Aref Ruqaa Ink','Aref Ruqaa',serif;font-weight:700;font-size:54px;letter-spacing:0;color:var(--gold);
+background:linear-gradient(135deg,#6b4a1c 0%,#b8903f 45%,#e0c488 55%,#6b4a1c 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
+.dcol span{font-family:'Amiri',serif;font-size:17px;letter-spacing:0;color:var(--muted)}
+.cd-row{gap:0;border:1.5px solid var(--gold);border-radius:18px;padding:10px 4px;background:linear-gradient(180deg,#fffdf9,#f6eee0);box-shadow:inset 0 0 0 5px #fffdf9,inset 0 0 0 6px rgba(168,134,79,.4),0 10px 24px rgba(110,85,50,.12)}
+.cd-b{max-width:none;border:0;border-radius:0;background:none;box-shadow:none;padding:6px 0 4px}
+.cd-b+.cd-b{border-inline-start:1px solid rgba(168,134,79,.35)}
+.cd-b b{font-family:'Aref Ruqaa Ink','Aref Ruqaa',serif;font-weight:700;font-size:32px;color:var(--gold);
+background:linear-gradient(135deg,#6b4a1c 0%,#b8903f 45%,#e0c488 55%,#6b4a1c 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.cd-b span{font-size:16px}
+
+/* ===== أمان: لو الجافاسكربت ما اشتغلش الدعوة تظهر برضه ===== */
+#main{animation:fbm .1s 9s forwards}
+@keyframes fbm{to{opacity:1;transform:none}}
+#intro{animation:fbi .1s 9s forwards}
+@keyframes fbi{to{opacity:0;visibility:hidden;pointer-events:none}}
+.alt-maps{margin-top:10px;font-size:15px;color:var(--muted)}
+.alt-maps a{color:#8a6a35;text-decoration:none;border-bottom:1px solid rgba(168,134,79,.5);padding:0 2px}
+
+.maps{margin-top:10px}
+.maps .label{margin-bottom:4px}
+.maps-row{display:flex;flex-wrap:wrap;justify-content:center}
+.mp{margin:4px;padding:8px 16px;border:1.5px solid var(--gold);border-radius:999px;color:#8a6a35;background:#fffdf9;text-decoration:none;font-weight:700;font-size:17px;box-shadow:0 4px 10px rgba(110,85,50,.1)}
+
+/* ===== استرجاع الإفيكتات + راحة للعين ===== */
+body{background:#f2eadc}
+.glow{position:fixed;top:0;right:0;bottom:0;left:0;z-index:0;pointer-events:none;
+background:radial-gradient(ellipse at 50% -10%,#fffaf0 0%,rgba(255,250,240,0) 62%),radial-gradient(ellipse at 95% 100%,rgba(217,191,140,.32),rgba(217,191,140,0) 55%),radial-gradient(ellipse at 0% 65%,rgba(217,191,140,.22),rgba(217,191,140,0) 52%);
+animation:breath 9s ease-in-out infinite}
+@keyframes breath{50%{opacity:.78}}
+.bgdeco{position:fixed;opacity:.24;will-change:transform;transform:translateZ(0)}
+.names,.dcol b{filter:drop-shadow(0 2px 1.5px rgba(110,80,35,.28))}
+.card{background:rgba(255,253,249,.96)}
+.float span{max-width:30px}
+.float span.tw{bottom:auto;opacity:0;animation:tw 4.5s ease-in-out infinite}
+@keyframes tw{50%{opacity:.7;transform:scale(1.25)}}
+
+/* دخول الدعوة بالتتابع */
+#main.shown .inner>*{animation:up .9s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i,0)*.06s + .2s)}
+@keyframes up{from{opacity:0;transform:translateY(16px)}}
+
+/* حركات ناعمة */
+.mono svg{animation:breathe 4.5s ease-in-out infinite}
+@keyframes breathe{50%{transform:scale(1.035)}}
+#cd_s.pop{animation:sec .5s ease}
+@keyframes sec{0%{transform:scale(1.18);opacity:.6}100%{transform:none;opacity:1}}
+.rsvp .btn{animation:softglow 3s ease-in-out infinite}
+@keyframes softglow{50%{box-shadow:0 6px 14px rgba(150,118,63,.3),0 0 0 7px rgba(201,168,105,.2)}}
+@media (prefers-reduced-motion:reduce){.float,.mono svg,.rsvp .btn,.glow{animation:none}.float{display:none}}
+
+/* ===== شريط فتح الدعوة في المتصفح ===== */
+#ob{display:none;position:fixed;top:0;left:0;right:0;z-index:30;padding:calc(8px + env(safe-area-inset-top,0px)) 12px 10px;background:#fffdf9;border-bottom:1.5px solid var(--gold);box-shadow:0 6px 16px rgba(110,85,50,.18);text-align:center;font-family:'Amiri',serif}
+#ob.show{display:block}
+.ob-t{font-size:17px;font-weight:700;color:#8a6a35}
+.ob-b{margin-top:6px}
+.ob-b a,.ob-b button{display:inline-block;margin:3px;padding:6px 14px;border-radius:999px;border:1.5px solid var(--gold);background:#fffdf9;color:#8a6a35;font:700 16px 'Amiri',serif;text-decoration:none;cursor:pointer}
+.ob-b a{background:linear-gradient(135deg,#bc9a62,#96763f);color:#fff;border-color:#96763f}
+.ob-h{font-size:14px;color:var(--muted);margin-top:2px}
+
+/* ===== تدرّج ذهبي آمن للآيفون: نص صلب تحته + طبقة تدرّج فوقه ===== */
+.names,.dcol b,.cd-b b{background:none !important;-webkit-text-fill-color:currentColor !important;filter:none !important;color:#a07c3f !important;text-shadow:0 1px 0 rgba(255,255,255,.8),0 3px 5px rgba(110,80,35,.22)}
+.names span{position:relative;display:inline-block}
+.dcol b,.cd-b b{position:relative}
+.names span::after,.dcol b::after,.cd-b b::after{content:attr(data-text);position:absolute;left:0;right:0;top:0;text-align:center;white-space:nowrap;background:linear-gradient(135deg,#6b4a1c 0%,#b8903f 45%,#e0c488 55%,#6b4a1c 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;text-shadow:none}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&display=swap"></noscript>
+<noscript><style>#intro{display:none}#main{opacity:1;transform:none}</style></noscript>
+</head>
+<body>
+<div id="ob" role="dialog" aria-label="فتح في المتصفح">
+  <div class="ob-t">لأفضل تجربة، افتح الدعوة في المتصفح</div>
+  <div class="ob-b">
+    <a id="obA" href="#">فتح في Chrome</a>
+    <button id="obC" type="button">نسخ الرابط</button>
+    <button id="obX" type="button" aria-label="إغلاق">✕</button>
+  </div>
+  <div class="ob-h" id="obH"></div>
+</div>
+<svg class="bgdeco" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="pt" width="220" height="200" patternUnits="userSpaceOnUse">
+      <g transform="translate(18 24) scale(.4)">
+        <circle cx="80" cy="64" r="42" fill="none" stroke="#a8864f" stroke-width="2.5"/>
+        <path d="M98.6 64 A42 42 0 0 1 140 22" fill="none" stroke="#f6efe2" stroke-width="13"/>
+        <circle cx="140" cy="64" r="42" fill="none" stroke="#a8864f" stroke-width="7"/>
+        <polygon points="80,2 90,12 80,24 70,12" fill="#d9bf8c" stroke="#a8864f" stroke-width="1.5"/>
+        <text x="140" y="80" text-anchor="middle" font-family="'Aref Ruqaa',serif" font-size="46" font-weight="700" fill="#a8864f">م</text>
+        <text x="80" y="80" text-anchor="middle" font-family="'Aref Ruqaa',serif" font-size="46" font-weight="700" fill="#a8864f">ح</text>
+      </g>
+      <g transform="translate(128 124) scale(.4)">
+        <circle cx="80" cy="64" r="42" fill="none" stroke="#a8864f" stroke-width="2.5"/>
+        <path d="M98.6 64 A42 42 0 0 1 140 22" fill="none" stroke="#f6efe2" stroke-width="13"/>
+        <circle cx="140" cy="64" r="42" fill="none" stroke="#a8864f" stroke-width="7"/>
+        <polygon points="80,2 90,12 80,24 70,12" fill="#d9bf8c" stroke="#a8864f" stroke-width="1.5"/>
+        <text x="140" y="80" text-anchor="middle" font-family="'Aref Ruqaa',serif" font-size="46" font-weight="700" fill="#a8864f">م</text>
+        <text x="80" y="80" text-anchor="middle" font-family="'Aref Ruqaa',serif" font-size="46" font-weight="700" fill="#a8864f">ح</text>
+      </g>
+      <path transform="translate(160 32)" d="M0 -8 l2.4 5.6 5.6 2.4 -5.6 2.4 -2.4 5.6 -2.4 -5.6 -5.6 -2.4 5.6 -2.4z" fill="#c9a869"/>
+      <path transform="translate(50 150)" d="M0 -8 l2.4 5.6 5.6 2.4 -5.6 2.4 -2.4 5.6 -2.4 -5.6 -5.6 -2.4 5.6 -2.4z" fill="#c9a869"/>
+      <path transform="translate(185 100)" d="M0 0 c-3-5-10-2-7 4 2 3 7 6 7 6 s5-3 7-6 c3-6-4-9-7-4z" fill="#d9bf8c"/>
+      <path transform="translate(110 70)" d="M0 0 c-3-5-10-2-7 4 2 3 7 6 7 6 s5-3 7-6 c3-6-4-9-7-4z" fill="#d9bf8c"/>
+      <path transform="translate(40 100) scale(.6)" d="M0 -8 l2.4 5.6 5.6 2.4 -5.6 2.4 -2.4 5.6 -2.4 -5.6 -5.6 -2.4 5.6 -2.4z" fill="#d9bf8c"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#pt)"/>
+</svg>
+<div class="glow" aria-hidden="true"></div>
+<div class="float" id="float" aria-hidden="true"></div>
+
+<div id="intro">
+  <div class="env">
+    <div class="env-back"></div>
+    <div class="paper"><div class="pm"><svg viewBox="0 0 220 112" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="80" cy="64" r="42" fill="none" stroke="#a8864f" stroke-width="2.5"/>
+      <path d="M98.6 64 A42 42 0 0 1 140 22" fill="none" stroke="#fffdf9" stroke-width="13"/>
+      <circle cx="140" cy="64" r="42" fill="none" stroke="#a8864f" stroke-width="7"/>
+      <polygon points="80,2 90,12 80,24 70,12" fill="#e9d3a4" stroke="#a8864f" stroke-width="1.5"/>
+      <text x="140" y="80" text-anchor="middle" font-family="'Aref Ruqaa',serif" font-size="46" font-weight="700" fill="#a8864f">م</text>
+      <text x="80" y="80" text-anchor="middle" font-family="'Aref Ruqaa',serif" font-size="46" font-weight="700" fill="#a8864f">ح</text>
+    </svg></div><div class="pt">دعوة خطوبة</div></div>
+    <div class="pocket"></div>
+    <div class="pmono"><svg viewBox="0 0 220 112" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="80" cy="64" r="42" fill="none" stroke="#a8864f" stroke-width="2.5"/>
+      <path d="M98.6 64 A42 42 0 0 1 140 22" fill="none" stroke="#e6d8bf" stroke-width="13"/>
+      <circle cx="140" cy="64" r="42" fill="none" stroke="#a8864f" stroke-width="7"/>
+      <polygon points="80,2 90,12 80,24 70,12" fill="#e9d3a4" stroke="#a8864f" stroke-width="1.5"/>
+      <text x="140" y="80" text-anchor="middle" font-family="'Aref Ruqaa',serif" font-size="46" font-weight="700" fill="#a8864f">م</text>
+      <text x="80" y="80" text-anchor="middle" font-family="'Aref Ruqaa',serif" font-size="46" font-weight="700" fill="#a8864f">ح</text>
+    </svg></div>
+    <div class="flap"></div>
+    <div class="seal">م ح</div>
+    <div class="burst" id="burst"></div>
+  </div>
+  <div class="hint">اضغط لفتح الدعوة</div>
+</div>
+
+<div id="main">
+<div class="card"><div class="inner">
+  <div class="mono"><svg viewBox="0 0 220 112" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="م و ح">
+    <defs>
+      <linearGradient id="gg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8a6a35"/><stop offset=".5" stop-color="#d9bf8c"/><stop offset="1" stop-color="#8a6a35"/></linearGradient>
+      <clipPath id="topclip"><rect x="92" y="0" width="40" height="64"/></clipPath>
+    </defs>
+    <!-- خاتم العروس: رفيع وفيه ألماسة -->
+    <circle cx="80" cy="64" r="42" fill="none" stroke="url(#gg)" stroke-width="2.5"/>
+    <!-- خاتم العريس: دبلة عريضة سادة -->
+    <path d="M98.6 64 A42 42 0 0 1 140 22" fill="none" stroke="#fffdf9" stroke-width="13"/>
+    <circle cx="140" cy="64" r="42" fill="none" stroke="url(#gg)" stroke-width="7"/>
+    <circle cx="140" cy="64" r="42" fill="none" stroke="#fffdf9" stroke-width="1" opacity=".55"/>
+    <circle cx="140" cy="64" r="42" fill="none" stroke="url(#gg)" stroke-width="7" clip-path="url(#topclip)"/>
+    <!-- الألماسة -->
+    <polygon points="80,2 90,12 80,24 70,12" fill="#f3e4c0" stroke="#8a6a35" stroke-width="1.2"/>
+    <path d="M70 12 H90 M80 2 L76 12 L80 24 L84 12 Z" fill="none" stroke="#8a6a35" stroke-width=".8"/>
+    <path d="M74 21 L78 25 M86 21 L82 25" stroke="#8a6a35" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="140" y="80" text-anchor="middle" font-family="'Aref Ruqaa',serif" font-size="46" font-weight="700" fill="url(#gg)">م</text>
+    <text x="80" y="80" text-anchor="middle" font-family="'Aref Ruqaa',serif" font-size="46" font-weight="700" fill="url(#gg)">ح</text>
+  </svg></div>
+  <p class="bismillah">بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ</p>
+  <p class="verse">﴿وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً﴾</p>
+  <p class="small">صَدَقَ اللهُ العَظِيمُ</p>
+  <p class="intro-line">بِقُلُوبٍ مُلْؤُهَا الفَرْحَةُ وَالسُّرُورُ، وَبِفَضْلِ اللهِ وَتَوْفِيقِهِ</p>
+  <p class="small">يَتَشَرَّفُ</p>
+  <p class="lead"><span id="o_family">أَهْلُ العَرِيسِ وَأَهْلُ العَرُوسِ</span><br>بِدَعْوَتِكُمْ لِحُضُورِ حَفْلِ خِطْبَةِ</p>
+  <div class="names"><span id="o_groom" data-text="مَحْمُود">مَحْمُود</span></div>
+  <div class="father"><span class="rel">نَجْلُ الأُسْتَاذِ</span><span class="fname" id="o_gfather">عَبْدُ المُنْعِمِ أَبُو الدَّهَبِ</span></div>
+  <div class="amp2">&amp;</div>
+  <div class="names"><span id="o_bride" data-text="حَبِيبَة">حَبِيبَة</span></div>
+  <div class="father"><span class="rel">كَرِيمَةُ الأُسْتَاذِ</span><span class="fname" id="o_bfather">مَحْمُود حُسَيْن</span></div>
+  <div class="divider"></div>
+  <div class="datebox">
+    <div class="dbadge">الخَمِيس</div>
+    <div class="dpanel">
+      <div class="dcol"><b data-text="10">10</b><span>يَوْم</span></div>
+      <div class="dcol"><b data-text="12">12</b><span>شَهْر</span></div>
+      <div class="dcol dy"><b data-text="2026">2026</b><span>سَنَة</span></div>
+    </div>
+  </div>
+  <div class="row"><div class="label">الوقت</div><div class="val" id="o_time">مِنَ 6 إِلَى 10 مَسَاءً</div></div>
+  <div class="row"><div class="label">المكان</div><div class="val" id="o_place">قَاعَةُ الدَّارِ</div>
+    <div class="maps">
+      <div class="label">افتح الموقع على</div>
+      <div class="maps-row">
+        <a class="mp" id="mapBtn" href="#" target="_blank" rel="noopener">📍 خرائط جوجل</a>
+        <a class="mp" href="https://waze.com/ul?ll=29.9516611,31.1786297&amp;navigate=yes" target="_blank" rel="noopener">Waze</a>
+        <a class="mp" href="https://maps.apple.com/?ll=29.9516611,31.1786297&amp;q=%D9%82%D8%A7%D8%B9%D8%A9%20%D8%A7%D9%84%D8%AF%D8%A7%D8%B1" target="_blank" rel="noopener">خرائط Apple</a>
+      </div>
+    </div></div>
+  <div class="cd" id="cd">
+    <div class="cd-t">بَاقِي عَلَى الفَرْحَةِ</div>
+    <div class="cd-row">
+      <div class="cd-b"><b id="cd_d" data-text="00">00</b><span>يَوْم</span></div>
+      <div class="cd-b"><b id="cd_h" data-text="00">00</b><span>سَاعَة</span></div>
+      <div class="cd-b"><b id="cd_m" data-text="00">00</b><span>دَقِيقَة</span></div>
+      <div class="cd-b"><b id="cd_s" data-text="00">00</b><span>ثَانِيَة</span></div>
+    </div>
+  </div>
+  <p class="dua">حُضُورُكُمْ يُسْعِدُنَا وَيَزِيدُ فَرْحَتَنَا<br>وَنَسْأَلُ اللهَ أَنْ يُبَارِكَ لَهُمَا وَيَجْمَعَ بَيْنَهُمَا فِي خَيْرٍ</p>
+  <div class="divider"></div>
+  <div class="rsvp">
+    <div class="label">تَأْكِيدُ الحُضُورِ</div>
+    <input id="guestName" type="text" placeholder="اكتب اسمك هنا" autocomplete="name">
+    <button class="btn" id="rsvpBtn" type="button">✓ أَكِّدْ حُضُورِي</button>
+    <div class="note" id="note"></div>
+  </div>
+</div></div>
+
+</div>
+
+<script>
+var intro=document.getElementById('intro'),main=document.getElementById('main'),started=false;
+function openEnv(){
+  if(started)return;started=true;
+  var b=document.getElementById('burst'),sy=['✦','♥','✧','✦','♡'];
+  for(var i=0;i<14;i++){
+    var e=document.createElement('span'),a=Math.random()*Math.PI*2,r=90+Math.random()*90;
+    e.textContent=sy[i%sy.length];
+    e.style.setProperty('--dx',Math.cos(a)*r+'px');
+    e.style.setProperty('--dy',(Math.sin(a)*r-60)+'px');
+    e.style.animationDelay=(0.65+Math.random()*0.4)+'s';
+    b.appendChild(e);
+  }
+  intro.classList.add('open');
+  setTimeout(function(){intro.classList.add('done');main.classList.add('shown');},2700);
+  setTimeout(function(){intro.style.display='none';},3700);
+}
+/* ===== إعدادات الدعوة: غيّر القيم دي ===== */
+var CONFIG={
+  mapUrl:'https://www.google.com/maps/search/?api=1&query=29.9516611,31.1786297',  // حط هنا رابط موقع قاعة الدار من خرائط جوجل
+  sheetUrl:'https://script.google.com/macros/s/AKfycbyz8sMp92eXoo4NHBeUKlfjBqlI-4pmZRmkczNlXbXlMZw6I2aqr40n7hw9EBEBYJGG/exec'   // رابط Web app من Google Apps Script (الخطوة الأخيرة)
+};
+var mb=document.getElementById('mapBtn');
+if(CONFIG.mapUrl){mb.href=CONFIG.mapUrl;}else{mb.style.display='none';}
+document.getElementById('rsvpBtn').addEventListener('click',function(){
+  var inp=document.getElementById('guestName'),btn=this,n=inp.value.trim(),note=document.getElementById('note');
+  if(!n){note.textContent='من فضلك اكتب اسمك الأول 🤍';inp.focus();return;}
+  if(!CONFIG.sheetUrl){note.textContent='التأكيد لسه مش متفعّل، كلّمونا مباشرة 🤍';return;}
+  btn.disabled=true;note.textContent='جاري التسجيل...';
+  fetch(CONFIG.sheetUrl,{method:'POST',mode:'no-cors',body:new URLSearchParams({name:n})})
+   .then(function(){inp.value='';btn.textContent='تم التأكيد ✓';note.textContent='جزاك الله خيرًا، تم تسجيل حضورك 🤍';})
+   .catch(function(){btn.disabled=false;note.textContent='حصلت مشكلة، جرّب مرة تانية 🤍';});
+});
+intro.addEventListener('click',openEnv);
+setTimeout(openEnv,4500);
+
+(function(){
+  var f=document.getElementById('float'),sym=['♥','✦','✧','◦','♡'];
+  var low=(navigator.deviceMemory&&navigator.deviceMemory<=4)||(navigator.hardwareConcurrency&&navigator.hardwareConcurrency<=4);
+  for(var i=0;i<(low?5:14);i++){
+    var e=document.createElement('span');
+    e.textContent=sym[i%sym.length];
+    e.style.left=(Math.random()*96)+'%';
+    e.style.fontSize=(10+Math.random()*14)+'px';
+    e.style.animationDuration=(14+Math.random()*14)+'s';
+    e.style.animationDelay=(-Math.random()*20)+'s';
+    f.appendChild(e);
+  }
+  for(var j=0;j<(low?4:10);j++){
+    var t=document.createElement('span');
+    t.className='tw';t.textContent='✦';
+    t.style.left=(Math.random()*96)+'%';
+    t.style.top=(Math.random()*92)+'%';
+    t.style.fontSize=(9+Math.random()*9)+'px';
+    t.style.animationDelay=(-Math.random()*4)+'s';
+    t.style.animationDuration=(3.5+Math.random()*3)+'s';
+    f.appendChild(t);
+  }
+})();
+
+(function(){
+  var target=new Date(2026,11,10,18,0,0).getTime(); // 10 ديسمبر 2026 الساعة 6 مساءً
+  function pad(n){return n<10?'0'+n:''+n;}
+  function tick(){
+    var d=target-Date.now();
+    if(d<=0){document.getElementById('cd').innerHTML='<div class="cd-done">الفَرْحَةُ بَدَأَتْ 🤍</div>';return;}
+    document.getElementById('cd_d').textContent=pad(Math.floor(d/864e5));
+    document.getElementById('cd_h').textContent=pad(Math.floor(d%864e5/36e5));
+    document.getElementById('cd_m').textContent=pad(Math.floor(d%36e5/6e4));
+    var se=document.getElementById('cd_s');se.textContent=pad(Math.floor(d%6e4/1e3));se.classList.remove('pop');void se.offsetWidth;se.classList.add('pop');
+    ['cd_d','cd_h','cd_m','cd_s'].forEach(function(k){var e=document.getElementById(k);e.setAttribute('data-text',e.textContent);});
+    setTimeout(tick,1000);
+  }
+  tick();
+})();
+Array.prototype.forEach.call(document.querySelectorAll('.inner>*'),function(e,i){e.style.setProperty('--i',i);});
+
+(function(){
+  var ua=navigator.userAgent||'';
+  var inApp=/FBAN|FBAV|FB_IAB|Instagram|Messenger|Line\/|Snapchat|Twitter|TikTok|MicroMessenger|GSA\/|Telegram/i.test(ua);
+  if(!inApp||location.protocol.indexOf('http')!==0)return;
+  var ob=document.getElementById('ob'),a=document.getElementById('obA'),h=document.getElementById('obH');
+  var ios=/iPhone|iPad|iPod/i.test(ua),android=/Android/i.test(ua);
+  if(android){
+    a.href='intent://'+location.host+location.pathname+location.search+'#Intent;scheme=https;package=com.android.chrome;end';
+  }else{
+    a.style.display='none';
+    h.textContent=ios?'من قائمة ••• اختار «Open in Safari»':'انسخ الرابط وافتحه في المتصفح';
+  }
+  document.getElementById('obC').addEventListener('click',function(){
+    var btn=this,url=location.href;
+    function ok(){btn.textContent='تم النسخ ✓';}
+    try{
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(url).then(ok,function(){prompt('انسخ الرابط',url);});}
+      else{prompt('انسخ الرابط',url);}
+    }catch(e){prompt('انسخ الرابط',url);}
+  });
+  document.getElementById('obX').addEventListener('click',function(){ob.classList.remove('show');});
+  ob.classList.add('show');
+})();
+</script>
+</body>
+</html>
